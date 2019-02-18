@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>c.163.com</groupId>
-    <artifactId>spring-boot-docker</artifactId>
+    <artifactId>springbootdocker</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
     <name>Cloudcomb Spring Boot Docker</name>
