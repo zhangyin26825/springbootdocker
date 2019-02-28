@@ -1,2 +1,9 @@
 server:
   port: 80
+spring:
+  redis:
+    host: springbootdocker-redis-master
+    port: 6379
+    password: MTIzNDU2Nzg
+
+
