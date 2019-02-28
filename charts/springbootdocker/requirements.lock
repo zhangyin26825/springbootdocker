@@ -1,0 +1,9 @@
+dependencies:
+- name: mysql
+  repository: http://mirror.azure.cn/kubernetes/charts
+  version: 0.15.0
+- name: redis
+  repository: http://mirror.azure.cn/kubernetes/charts
+  version: 6.1.3
+digest: sha256:1784d3eea45310f8e88cc196aae41f1112394e2297f339409713fb1a194831fc
+generated: 2019-02-27T14:35:23.631818+08:00
