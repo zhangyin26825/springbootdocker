@@ -21,7 +21,6 @@ pipeline {
                 }
             }
             steps{
-                sh 'username'
                 sh 'whoami'
                 sh 'docker version'
                 sh 'docker build -t spring-boot-docker:0.0.1 .'
