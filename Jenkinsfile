@@ -21,6 +21,9 @@ pipeline {
                 }
             }
             steps{
+                sh 'username'
+                sh 'whoami'
+                sh 'docker version'
                 sh 'docker build -t spring-boot-docker:0.0.1 .'
                 sh 'docker push docker-image.mqcoding.com:5000/spring-boot-docker:0.0.1'
             }
