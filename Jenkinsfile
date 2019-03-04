@@ -20,8 +20,8 @@ pipeline {
                 }
             }
             steps{
-                sh 'docker build -f Dockerfile -t spring-boot-docker:0.0.1'
-                sh 'docker push docker-image.mqcoding.com:5000/test/spring-boot-docker:0.0.1'
+                sh 'docker build -t spring-boot-docker:0.0.1 .'
+                sh 'docker push docker-image.mqcoding.com:5000/spring-boot-docker:0.0.1'
             }
 
         }
