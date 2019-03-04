@@ -9,4 +9,4 @@ EXPOSE 80
 COPY --from=BUILD /usr/src/app/target /opt/target
 WORKDIR /opt/target
 
-CMD ["/bin/bash", "-c", "java -Xmx200m -jar springbootdocker-0.1.0.jar"]
+CMD ["/bin/bash", "-c", "java -Xmx200m -jar spring-boot-docker.jar"]

@@ -43,6 +43,7 @@
 
 
     <build>
+        <finalName>spring-boot-docker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -51,48 +52,11 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1</version>
                 <configuration>
-                    <allowInsecureRegistries>true</allowInsecureRegistries>
-                    <from>
-
-                        <image>openjdk</image>
-
-                        <auth>
-                            <username>459402930@qq.com</username>
-                            <password>459420930</password>
-                        </auth>
-                    </from>
                     <to>
-                        <image>docker-image.mqcoding.com:5000/my-image:built-with-jib</image>
-                        <!--<auth>-->
-                            <!--<username>my_username</username>-->
-                            <!--<password>my_password</password>-->
-                        <!--</auth>-->
-                        <tags>
-                            <tag>latest</tag>
-                        </tags>
+                        <image>myimage</image>
                     </to>
-                    <container>
-                        <jvmFlags>
-                            <jvmFlag>-Xms512m</jvmFlag>
-                            <jvmFlag>-Xdebug</jvmFlag>
-                            <jvmFlag>-Xmy:flag=jib-rules</jvmFlag>
-                        </jvmFlags>
-                        <mainClass>mypackage.MyApp</mainClass>
-                        <args>
-                            <arg>some</arg>
-                            <arg>args</arg>
-                        </args>
-                        <ports>
-                            <port>80</port>
-                        </ports>
-                        <labels>
-                            <key1>value1</key1>
-                            <key2>value2</key2>
-                        </labels>
-                        <!--<format>OCI</format>-->
-                    </container>
                 </configuration>
             </plugin>
         </plugins>
