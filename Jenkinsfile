@@ -16,7 +16,7 @@ pipeline {
               agent{
                 docker{
                     image 'k8s-kubectl:v1.11.8'
-                    args '-v /Users/zhangyin/.kube:/root/.kube'
+                    args '-v /Users/zhangyin/.kube:/root/.kube -v /var/run/docker.sock:/var/run/docker.sock -v /Users/zhangyin/.docker:/root/.docker'
 
                 }
                 }
