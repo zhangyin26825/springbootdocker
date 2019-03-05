@@ -19,13 +19,14 @@ pipeline {
                     args '-v /Users/zhangyin/.kube:/root/.kube'
 
                 }
+                }
                 steps{
 
                     sh 'kubectl get pods'
 
                 }
               }
-        }
+
 
     }
 }
