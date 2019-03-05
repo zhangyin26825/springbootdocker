@@ -27,20 +27,5 @@ pipeline {
               }
         }
 
-//        stage('docker'){
-//            agent{
-//                docker{
-//                    image 'docker'
-//                    args  '-v /var/run/docker.sock:/var/run/docker.sock'
-//                }
-//            }
-//            steps{
-//                sh 'whoami'
-//                sh 'docker version'
-//                sh 'docker build -t spring-boot-docker:0.0.1 .'
-//                sh 'docker push docker-image.mqcoding.com:5000/spring-boot-docker:0.0.1'
-//            }
-
-        }
     }
 }
