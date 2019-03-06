@@ -21,7 +21,8 @@ pipeline {
                 }
                 }
                 steps{
-
+                    sh 'file /.helm'
+                    sh 'file /.kube'
                     sh 'helm version'
 
                 }
