@@ -22,7 +22,7 @@ pipeline {
                 }
                 steps{
 
-                    sh 'kubectl get pods'
+                    sh 'helm version'
 
                 }
               }
