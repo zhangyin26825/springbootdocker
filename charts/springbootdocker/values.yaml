@@ -19,11 +19,11 @@ resources:
     memory: 256Mi
 ingress:
   enabled: true
-#mysql:
-#  extraVolumeMounts:
-#    - name: mysqlVoume
-#      mountPath: /usr/share/extras
-#      readOnly: false
+mysql:
+  extraVolumeMounts:
+    - name: mysqlVoume
+      mountPath: /usr/share/extras
+      readOnly: false
 redis:
   usePassword: true
   password: MTIzNDU2Nzg
